@@ -1,25 +1,25 @@
 class Vx < Formula
   desc "Zero-config Linux VMs from the terminal: a CLI and dashboard on top of QEMU"
   homepage "https://github.com/AlexanderWangY/vx"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/AlexanderWangY/vx/releases/download/v0.2.0/vx-aarch64-apple-darwin.tar.xz"
-      sha256 "cb4823625d473818f59c7efc5b96187b0ee2789252ba1c2e6285f5f208ed3e1d"
+      url "https://github.com/AlexanderWangY/vx/releases/download/v0.3.0/vx-aarch64-apple-darwin.tar.xz"
+      sha256 "4fa7e230220f13e831fa211ff91a3251800f101d7e25f8193d8937e95cfde45b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/AlexanderWangY/vx/releases/download/v0.2.0/vx-x86_64-apple-darwin.tar.xz"
-      sha256 "c6372c59c2eb72a2386f4f634e31759edc847eea3cec4b85adac16fcf5993666"
+      url "https://github.com/AlexanderWangY/vx/releases/download/v0.3.0/vx-x86_64-apple-darwin.tar.xz"
+      sha256 "d398084d82ffc96cf7fcb6aae3f72490e765c9d48a49edd51bcc796a188d9ee0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/AlexanderWangY/vx/releases/download/v0.2.0/vx-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f674d6420361071b475f637f35a993b75b8edf53c9c33ac3420652f6d90b3bc3"
+      url "https://github.com/AlexanderWangY/vx/releases/download/v0.3.0/vx-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5a38924350b8b2eef93bfea398996b44416c173b839cdb1d7ade57d1e3717d28"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/AlexanderWangY/vx/releases/download/v0.2.0/vx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ff56f5b68eabf260eef650c9494e0cb941501d6cbadfee004d127bf96fcd5002"
+      url "https://github.com/AlexanderWangY/vx/releases/download/v0.3.0/vx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "29aba824714676068093b5a86ff2c2d24397f4e9ab36bdf0f4a8b00844af61cc"
     end
   end
   license "MIT"
